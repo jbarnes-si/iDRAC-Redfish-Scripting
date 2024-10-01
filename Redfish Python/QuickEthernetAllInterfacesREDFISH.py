@@ -93,7 +93,7 @@ def get_ethernet_interfaces(idrac_ip, verify_cert, idrac_username, idrac_passwor
     #for i in data['Members']:
     #    pprint(i)
     #    print("\n")
-    return { elem["Id"] : elem["MACAddress"] for elem in data["Members"]
+    return { elem["Id"] : elem["MACAddress"] for elem in data["Members"] }
 
 def get_specific_ethernet_interface():
     if args["x"]:
